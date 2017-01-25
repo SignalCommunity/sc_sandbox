@@ -1,0 +1,29 @@
+onLoadName = "*** Insert mission name here. ***";
+
+// SCMF Gear
+//Credits:headswe, Pabst, Zerith
+#include "CfgLoadouts.hpp"
+
+// Extended Event Handlers:
+#include "cfg\CfgEventHandlers.hpp"
+
+// Parameters
+#include "cfg\Params.hpp"
+
+// Respawn/Spectator config
+#include "cfg\Respawn.hpp"
+
+// ACE/Potato settings
+#include "cfg\ACE_Settings.hpp"
+
+// Functions
+#include "cfg\CfgFunctions.hpp"
+
+scmfDate = "2016/09/27"; //Framework date
+
+class CfgDebriefingSections {
+  class acex_killTracker {
+    title = "ACEX Killed Events";
+    variable = "acex_killTracker_outputText";
+  };
+};

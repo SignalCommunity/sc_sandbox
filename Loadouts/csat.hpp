@@ -22,7 +22,7 @@ class officer_F {		// PLATOON COMMANDER + SQUAD LEADER + XO + FAC/JTAC + COMPANY
 	weapons[] = 		{"carbine"};
 	launchers[] = 		{};
 	handguns[] = 		{};
-	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white","smoke_purple"};
+	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white","smoke_blue","smoke_purple"};
 	items[] = 			{"ACRE_PRC148"};
 	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","ACE_Vector"};
 	attachments[] = 	{"carbine_attachment"};
@@ -38,7 +38,7 @@ class Soldier_SL_F {	// PLATOON COMMANDER + SQUAD LEADER + XO + FAC/JTAC + COMPA
 	weapons[] = 		{"carbine"};
 	launchers[] = 		{};
 	handguns[] = 		{};
-	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white","smoke_purple"};
+	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white","smoke_blue","smoke_purple"};
 	items[] = 			{"ACRE_PRC148","ACRE_PRC343"};
 	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","ACE_Vector"};
 	attachments[] = 	{"carbine_attachment"};
@@ -70,7 +70,7 @@ class medic_F {			// MEDIC
 	weapons[] = 		{"carbine"};
 	launchers[] = 		{};
 	handguns[] = 		{};
-	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white","smoke_white"};
+	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white","smoke_white","smoke_green","smoke_green"};
 	items[] = 			{"ACRE_PRC343"};
 	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
 	attachments[] = 	{"carbine_attachment"};
@@ -86,7 +86,7 @@ class Soldier_TL_F {	// FIRETEAM LEADER
 	weapons[] = 		{"glrifle"};
 	launchers[] = 		{};
 	handguns[] = 		{};
-	magazines[] = 		{"glrifle_mag","glrifle_mag_trace","glrifle_mag_he","glrifle_mag_smoke","glrifle_mag_flare","grenade","smoke_white"};
+	magazines[] = 		{"glrifle_mag","glrifle_mag_trace","glrifle_mag_he","glrifle_mag_smoke","glrifle_mag_flare","grenade","smoke_white","smoke_red"};
 	items[] = 			{"ACRE_PRC343"};
 	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS"};
 	attachments[] = 	{"glrifle_attachment"};

@@ -32,8 +32,18 @@ class CfgLoadouts {
 		#include "Loadouts\aaf.hpp"
 	};
 };
+
 class CfgWeaponsPlatforms {
 	class MX {
 		#include "Weapons\mx.hpp"
+	};
+	class AK12 {
+		#include "Weapons\ak12.hpp"
+	};
+	class AKM {
+		#include "Weapons\akm.hpp"
+	};
+	class AK74 {
+		#include "Weapons\ak74.hpp"
 	};
 };

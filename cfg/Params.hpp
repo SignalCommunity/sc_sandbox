@@ -57,9 +57,12 @@ class Params {
 	class sand_param_bluforWeapFamily
 	{
 		title = "BLUFOR Weapon Family";
-		values[] = {0};
+		values[] = {0,1,2,3};
 		texts[] = {
-			"MX [NONE]"
+			"MX [NONE]",
+			"AK12 [@RHS,@HLC]",
+			"AKM [@RHS,@HLC]",
+			"AK74 [@RHS,@HLC]"
 		};
 		default = 0;
 		code = "sand_param_bluforWeapFamily = %1";
@@ -68,9 +71,12 @@ class Params {
 	class sand_param_opforWeapFamily
 	{
 		title = "OPFOR Weapon Family";
-		values[] = {0};
+		values[] = {0,1,2,3};
 		texts[] = {
-			"MX [NONE]"
+			"MX [NONE]",
+			"AK12 [@RHS,@HLC]",
+			"AKM [@RHS,@HLC]",
+			"AK74 [@RHS,@HLC]"
 		};
 		default = 0;
 		code = "sand_param_opforWeapFamily = %1";

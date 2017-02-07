@@ -39,38 +39,38 @@ private _replaceBys = [];
 
 // delve out correct amount of magazines
 {
-	if ((sand_param_tracerMagRatio == 4) || (sand_param_tracerMagRatio == 0)) then {
-		if ((sand_param_tracerMagRatio == 4) && ((_x select 0) in ["rifle_mag","glrifle_mag","carbine_mag","ar_mag","mmg_mag"])) then {
-			_replaceBys = _replaceBys - [_x];
-			_replaceBys = _replaceBys + [[_x select 0,""]]
-		};
-		if ((sand_param_tracerMagRatio == 0) && ((_x select 0) in ["rifle_mag_trace","glrifle_mag_trace","carbine_mag_trace","ar_mag_trace","mmg_mag_trace"])) then {
-			_replaceBys = _replaceBys - [_x];
-			_replaceBys = _replaceBys + [[_x select 0,""]]
-		};
-	} else {
+	_allTracer = if (sand_param_tracerMagRatio == 4) then {true} else {false};
+	_noTracer = if (sand_param_tracerMagRatio == 0) then {true} else {false};
 	
-		if ((_x select 0) in ["rifle_mag","glrifle_mag","carbine_mag"]) then {
-			_strN = (_x select 1) + ":" + str ((_armament / 4) * (4 - sand_param_tracerMagRatio));
-			_replaceBys = _replaceBys - [_x];
-			_replaceBys = _replaceBys + [[_x select 0, _strN]];
-		};
-		if ((_x select 0) in ["rifle_mag_trace","glrifle_mag_trace","carbine_mag_trace"]) then {
-			_strN = (_x select 1) + ":" + str ((_armament / 4) * (sand_param_tracerMagRatio));
-			_replaceBys = _replaceBys - [_x];
-			_replaceBys = _replaceBys + [[_x select 0, _strN]];
-		};
-		
-		if ((_x select 0) in ["ar_mag","mmg_mag"]) then {
-			_strN = (_x select 1) + ":" + str round(((_armament / 12) * (4 - sand_param_tracerMagRatio)));
-			_replaceBys = _replaceBys - [_x];
-			_replaceBys = _replaceBys + [[_x select 0, _strN]];
-		};
-		if ((_x select 0) in ["ar_mag_trace","mmg_mag_trace"]) then {
-			_strN = (_x select 1) + ":" + str round(((_armament / 12) * (sand_param_tracerMagRatio)));
-			_replaceBys = _replaceBys - [_x];
-			_replaceBys = _replaceBys + [[_x select 0, _strN]];
-		};
+	if (_allTracer && ((_x select 0) in ["rifle_mag","glrifle_mag","carbine_mag","ar_mag","mmg_mag"])) then {
+		_replaceBys = _replaceBys - [_x];
+		_replaceBys = _replaceBys + [[_x select 0,""]]
+	};
+	if (_noTracer && ((_x select 0) in ["rifle_mag_trace","glrifle_mag_trace","carbine_mag_trace","ar_mag_trace","mmg_mag_trace"])) then {
+		_replaceBys = _replaceBys - [_x];
+		_replaceBys = _replaceBys + [[_x select 0,""]]
+	};
+
+	if (!_allTracer && ((_x select 0) in ["rifle_mag","glrifle_mag","carbine_mag"])) then {
+		_strN = (_x select 1) + ":" + str ((_armament / 4) * (4 - sand_param_tracerMagRatio));
+		_replaceBys = _replaceBys - [_x];
+		_replaceBys = _replaceBys + [[_x select 0, _strN]];
+	};
+	if (!_noTracer&& ((_x select 0) in ["rifle_mag_trace","glrifle_mag_trace","carbine_mag_trace"])) then {
+		_strN = (_x select 1) + ":" + str ((_armament / 4) * (sand_param_tracerMagRatio));
+		_replaceBys = _replaceBys - [_x];
+		_replaceBys = _replaceBys + [[_x select 0, _strN]];
+	};
+	
+	if (!_allTracer && ((_x select 0) in ["ar_mag","mmg_mag"])) then {
+		_strN = (_x select 1) + ":" + str round(((_armament / 12) * (4 - sand_param_tracerMagRatio)));
+		_replaceBys = _replaceBys - [_x];
+		_replaceBys = _replaceBys + [[_x select 0, _strN]];
+	};
+	if (!_noTracer && ((_x select 0) in ["ar_mag_trace","mmg_mag_trace"])) then {
+		_strN = (_x select 1) + ":" + str round(((_armament / 12) * (sand_param_tracerMagRatio)));
+		_replaceBys = _replaceBys - [_x];
+		_replaceBys = _replaceBys + [[_x select 0, _strN]];
 	};
 } forEach _replaceBys;
 
@@ -141,6 +141,7 @@ private _fnc_addItemsToContainer = {
             private _mass = -1;
             private _count = -1;
             private _allowedSlots = [];
+			if (isNil "_classname") exitWith {":"};
             if (isClass (configFile >> "CfgMagazines" >> _classname)) then {
                 _mass = getNumber (configFile >> "CfgMagazines" >> _classname >> "mass");
                 _count = getNumber (configFile >> "CfgMagazines" >> _classname >> "count");
@@ -227,6 +228,7 @@ private _fnc_getWeaponArray = {
         };
         {
             (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
+			if (isNil "_className") exitWith {};
             if (({_x == _classname} count _magazines) > 0) exitWith {
                 private _count = getNumber (configFile >> "CfgMagazines" >> _classname >> "count");
                 _weaponArray set [_arrayIndex, [_classname, _count]];

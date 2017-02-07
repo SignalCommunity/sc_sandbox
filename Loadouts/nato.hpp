@@ -86,7 +86,7 @@ class Soldier_TL_F {	// FIRETEAM LEADER
 	weapons[] = 		{"glrifle"};
 	launchers[] = 		{};
 	handguns[] = 		{};
-	magazines[] = 		{"glrifle_mag","glrifle_mag_trace","glrifle_mag_he","glrifle_mag_smoke","grenade","smoke_white"};
+	magazines[] = 		{"glrifle_mag","glrifle_mag_trace","glrifle_mag_he","glrifle_mag_smoke","glrifle_mag_flare","grenade","smoke_white"};
 	items[] = 			{"ACRE_PRC343"};
 	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS"};
 	attachments[] = 	{"glrifle_attachment"};

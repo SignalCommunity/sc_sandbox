@@ -31,7 +31,7 @@ class Params {
 	class sand_param_bluforFaction
 	{
 		title = "BLUFOR Faction";
-		values[] = {0,1,2,3,4,5,6,7,8,9,10};
+		values[] = {0,1,2};
 		texts[] = {
 			"NATO [NONE]",
 			"CSAT [NONE]",
@@ -44,13 +44,13 @@ class Params {
 	class sand_param_opforFaction
 	{
 		title = "OPFOR Faction";
-		values[] = {0,1,2,3,4,5,6,7,8,9,10};
+		values[] = {0,1,2};
 		texts[] = {
 			"NATO [NONE]",
 			"CSAT [NONE]",
 			"AAF [NONE]"
 		};
-		default = 0;
+		default = 1;
 		code = "sand_param_opforFaction = %1";
 	};
 	

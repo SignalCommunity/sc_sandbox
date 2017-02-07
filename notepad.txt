@@ -1,1 +1,0 @@
-equipment assignment will calculate overall weight of unit and give at least a few magazines if already over target weight

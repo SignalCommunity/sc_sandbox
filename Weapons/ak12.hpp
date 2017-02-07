@@ -43,7 +43,7 @@ at_mag = "rhs_rpg7_PG7VR_mag:2";
 // MAT
 mat = "rhs_weap_rpg7";
 mat_mag = "rhs_rpg7_PG7VR_mag:5";
-mat_attachment = "rhs_acc_pgo7v"
+mat_attachment = "rhs_acc_pgo7v";
 
 // SAM
 sam = "rhs_weap_fim92";
@@ -59,7 +59,7 @@ pistol = "rhs_weap_pya";
 pistol_mag = "rhs_mag_9x19_17:2";
 
 // Grenades, Smoke, Frag and Miscellaneous
-grenade = "rhs_mag_rgd5:2";
+grenade = "rhs_mag_rgd5";
 smoke_white = "SmokeShell";
 smoke_red = "SmokeShellRed";
 smoke_purple = "SmokeShellPurple";

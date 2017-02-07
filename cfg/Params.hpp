@@ -130,15 +130,15 @@ class Params {
 	class sand_param_illuminationMunitions
 	{
 		title = "Illumination amount";
-		values[] = {0,4,10,20};
+		values[] = {0,2,8,16};
 		texts[] = {
 			"No flares.",
-			"Some flares. [4 per GL weapon]",
-			"Lots of flares. [10 per GL weapon]",
-			"Burning man 2018. [20 per GL weapon]"
+			"Some flares. [2 per GL weapon]",
+			"Lots of flares. [8 per GL weapon]",
+			"Burning man 2018. [16 per GL weapon]"
 		};
-		default = 1;
-		code = "sand_param_bluforNVD = %1";
+		default = 0;
+		code = "sand_param_illuminationMunitions = %1";
 	};
 	
 	class sand_param_bluforNVD

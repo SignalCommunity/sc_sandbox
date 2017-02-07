@@ -1,0 +1,9429 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=1339;
+	};
+	class Camera
+	{
+		pos[]={1632.5043,104.41728,5558.2954};
+		dir[]={0.77927363,-0.46593624,0.41920111};
+		up[]={0.41035521,0.88480699,0.22074528};
+		aside[]={0.47376475,9.6368603e-007,-0.88069892};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Air_F_Beta_Heli_Transport_01",
+	"A3_Armor_F_Beta_APC_Wheeled_01",
+	"ace_realisticnames",
+	"A3_Air_F_Beta_Heli_Attack_01",
+	"A3_Armor_F_Gamma_MBT_01",
+	"ace_cookoff",
+	"A3_Soft_F_Beta_Truck_01",
+	"ace_cargo",
+	"A3_Soft_F_MRAP_01",
+	"A3_Characters_F",
+	"ace_explosives",
+	"ace_finger",
+	"ace_mk6mortar",
+	"A3_Modules_F_Curator_Curator",
+	"ace_refuel",
+	"ace_weather"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=14;
+		class Item0
+		{
+			className="A3_Air_F_Beta";
+			name="Arma 3 Beta - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Armor_F_Beta";
+			name="Arma 3 Beta - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Armor_F_Gamma";
+			name="Arma 3 - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="ace_cookoff";
+			name="ACE3 - Cook off";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item5
+		{
+			className="A3_Soft_F_Beta";
+			name="Arma 3 Beta - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item6
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item7
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item9
+		{
+			className="ace_finger";
+			name="ACE3 - Finger";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item10
+		{
+			className="ace_mk6mortar";
+			name="ACE3 - Mk6 Mortar";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item11
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item12
+		{
+			className="ace_refuel";
+			name="ACE3 - Refuel";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item13
+		{
+			className="ace_weather";
+			name="ACE3 - Weather";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+	};
+};
+randomSeed=10562329;
+class ScenarioData
+{
+	author="*** Insert author name here. ***";
+	onLoadMission="Made with the SC Mission Framework - Based on F3";
+	saving=0;
+	class Header
+	{
+		gameType="Coop";
+		minPlayers=1;
+		maxPlayers=491;
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="potato_radios_configureAcre";
+		class Attribute0
+		{
+			property="potato_radios_acreGlobalConfig";
+			expression="[nil, _value] call potato_radios_fnc_acreGlobalAttributeLoad";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="true,false,true,0,Negotiations,8,false,false";
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="potato_radios_acreSideConfig";
+			expression="[nil, _value] call potato_radios_fnc_acreSideAttributeLoad";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=17;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false,false,false,false,false,false,false,false";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="en";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ru";
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ar";
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ar";
+							};
+						};
+						class Item5
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Alpha,Bravo,Charlie,Delta,Echo,Foxtrot,Empty,Empty,Empty,1st Platoon,2nd Platoon,COY";
+							};
+						};
+						class Item6
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET1,PLTNET2,COY,AIRCOMM,GROUNDCOMM,AIRLOC1,AIRLOC2,AIRLOC3,GROUNDLOC1,GROUNDLOC2,GROUNDLOC3";
+							};
+						};
+						class Item7
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET1,PLTNET2,COY,AIRCOMM,GROUNDCOMM,AIRLOC1,AIRLOC2,AIRLOC3,GROUNDLOC1,GROUNDLOC2,GROUNDLOC3";
+							};
+						};
+						class Item8
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Alpha,Bravo,Charlie,Delta,Echo,Foxtrot,Empty,Empty,Empty,1st Platoon,2nd Platoon,COY";
+							};
+						};
+						class Item9
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET1,PLTNET2,COY,AIRCOMM,GROUNDCOMM,AIRLOC1,AIRLOC2,AIRLOC3,GROUNDLOC1,GROUNDLOC2,GROUNDLOC3";
+							};
+						};
+						class Item10
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET1,PLTNET2,COY,AIRCOMM,GROUNDCOMM,AIRLOC1,AIRLOC2,AIRLOC3,GROUNDLOC1,GROUNDLOC2,GROUNDLOC3";
+							};
+						};
+						class Item11
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Alpha,Bravo,Charlie,Delta,Echo,Foxtrot,Empty,Empty,Empty,1st Platoon,2nd Platoon,COY";
+							};
+						};
+						class Item12
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET1,PLTNET2,COY,AIRCOMM,GROUNDCOMM,AIRLOC1,AIRLOC2,AIRLOC3,GROUNDLOC1,GROUNDLOC2,GROUNDLOC3";
+							};
+						};
+						class Item13
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET1,PLTNET2,COY,AIRCOMM,GROUNDCOMM,AIRLOC1,AIRLOC2,AIRLOC3,GROUNDLOC1,GROUNDLOC2,GROUNDLOC3";
+							};
+						};
+						class Item14
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Alpha,Bravo,Charlie,Delta,Echo,Foxtrot,Empty,Empty,Empty,1st Platoon,2nd Platoon,COY";
+							};
+						};
+						class Item15
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET1,PLTNET2,COY,AIRCOMM,GROUNDCOMM,AIRLOC1,AIRLOC2,AIRLOC3,GROUNDLOC1,GROUNDLOC2,GROUNDLOC3";
+							};
+						};
+						class Item16
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLTNET1,PLTNET2,COY,AIRCOMM,GROUNDCOMM,AIRLOC1,AIRLOC2,AIRLOC3,GROUNDLOC1,GROUNDLOC2,GROUNDLOC3";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=2;
+	};
+	class Category1
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="None";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="ReviveRequiredTrait";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="ReviveMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="ReviveRequiredItemsFakConsumed";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute4
+		{
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="ReviveMedicSpeedMultiplier";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=2;
+				};
+			};
+		};
+		class Attribute6
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute7
+		{
+			property="ReviveForceRespawnDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=3;
+				};
+			};
+		};
+		class Attribute8
+		{
+			property="ReviveBleedOutDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=20;
+				};
+			};
+		};
+		class Attribute9
+		{
+			property="ReviveDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=6;
+				};
+			};
+		};
+		class Attribute10
+		{
+			property="ReviveUnconsciousStateMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute11
+		{
+			property="ReviveRequiredItems";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=12;
+	};
+	class Category2
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		overviewText="*** Insert mission description here. ***";
+		resistanceWest=0;
+		startWeather=0;
+		startWind=0;
+		forecastWeather=0;
+		forecastWind=0;
+		forecastWaves=0;
+		rainForced=1;
+		lightningsForced=1;
+		wavesForced=1;
+		windForced=1;
+		year=1992;
+		month=10;
+		day=28;
+		hour=8;
+		minute=15;
+		startFogDecay=0;
+		forecastFogDecay=0;
+	};
+	class Entities
+	{
+		items=53;
+		class Item0
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1760.8121,7.6131592,5566.1763};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_TH1";
+			};
+			id=0;
+			type="B_Heli_Transport_01_F";
+			atlOffset=-0.026088238;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1764.7495,7.6332245,5583.5205};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_TH2";
+			};
+			id=3;
+			type="B_Heli_Transport_01_F";
+			atlOffset=-0.0060229301;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1785.4458,7.5691681,5559.6025};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_TH3";
+			};
+			id=4;
+			type="B_Heli_Transport_01_F";
+			atlOffset=-0.070079327;
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1788.5264,7.6156311,5577.646};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_TH4";
+			};
+			id=5;
+			type="B_Heli_Transport_01_F";
+			atlOffset=-0.023616314;
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1764.3519,7.9626961,5600.0444};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_IFV1";
+			};
+			id=6;
+			type="B_APC_Wheeled_01_cannon_F";
+			atlOffset=4.7683716e-007;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1767.1605,7.9626961,5613.4507};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_IFV2";
+			};
+			id=7;
+			type="B_APC_Wheeled_01_cannon_F";
+			atlOffset=4.7683716e-007;
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1788.5328,7.9626961,5594.3359};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_IFV3";
+			};
+			id=8;
+			type="B_APC_Wheeled_01_cannon_F";
+			atlOffset=4.7683716e-007;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1791.5365,7.9626961,5607.9985};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_IFV4";
+			};
+			id=9;
+			type="B_APC_Wheeled_01_cannon_F";
+			atlOffset=4.7683716e-007;
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1774.5645,7.424942,5633.9912};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_AH1";
+			};
+			id=10;
+			type="B_Heli_Attack_01_F";
+			atlOffset=-0.0069828033;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1778.8342,7.9620972,5647.5474};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_TNK1";
+			};
+			id=20;
+			type="B_MBT_01_cannon_F";
+			atlOffset=-0.034209728;
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1710.6526,7.6822357,5580.627};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_TR1";
+			};
+			id=33;
+			type="B_Truck_01_transport_F";
+			atlOffset=-0.042554855;
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1714.9421,7.676712,5600.1875};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_TR2";
+			};
+			id=34;
+			type="B_Truck_01_transport_F";
+			atlOffset=-0.048078537;
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1718.6465,7.6961212,5619.7188};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_TR3";
+			};
+			id=35;
+			type="B_Truck_01_transport_F";
+			atlOffset=-0.028669357;
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1699.3965,7.6675415,5603.3843};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_CAR2";
+			};
+			id=42;
+			type="B_MRAP_01_F";
+			atlOffset=-0.038403988;
+		};
+		class Item14
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1707.0709,5.5014391,5601.2188};
+						angles[]={0,4.9131751,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UNIT_BLU_1PLT_CO";
+						description="BluFor 1 Platoon Commander";
+						isPlayable=1;
+					};
+					id=71;
+					type="B_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="9,0,2";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1708.491,5.5014391,5596.9834};
+						angles[]={0,4.902319,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_1PLT_M";
+						description="BluFor 1 Platoon Medic";
+						isPlayable=1;
+					};
+					id=72;
+					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,purple,sc_mapmarkers\data\u_medic.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="9,0,2";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1710.0256,5.5014391,5604.7993};
+						angles[]={0,4.944818,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_1PLT_SGT";
+						description="BluFor 1 Platoon Sergeant";
+						isPlayable=1;
+					};
+					id=73;
+					type="B_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,purple,sc_mapmarkers\data\u_xo.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="9,4,3";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1710.0468,5.5014391,5600.7246};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_1PLT_FAC";
+						description="BluFor 1 Platoon FAC";
+						isPlayable=1;
+					};
+					id=1293;
+					type="B_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,purple,sc_mapmarkers\data\u_jtac.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="9,0,3";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_1PLT";
+			};
+			id=70;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Plt HQ,34,purple,sc_mapmarkers\data\platoon_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor 1PLT";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="3,0,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item15
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1718.9644,5.5014391,5578.4741};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_ASL_SL";
+						description="BluFor Alpha Squad Leader";
+						isPlayable=1;
+					};
+					id=79;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1721.7874,5.5014391,5582.0928};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_ASL_M";
+						description="BluFor Alpha Medic";
+						isPlayable=1;
+					};
+					id=80;
+					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,red,sc_mapmarkers\data\u_medic.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_ASL";
+			};
+			id=78;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ASL,30,red,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor ASL";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0,0,0";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item16
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1726.7227,5.5014391,5576.958};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_A1_FTL";
+						description="BluFor Alpha 1 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=82;
+					type="B_Soldier_TL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1729.785,5.5014391,5572.1572};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_A1_AR";
+						description="BluFor Alpha 1 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=83;
+					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1727.3965,5.5014391,5570.5396};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_A1_AAR";
+						description="BluFor Alpha 1 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=84;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1732.4418,5.5014391,5575.6812};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_A1_AT1";
+						description="BluFor Alpha 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=85;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1729.899,5.5014391,5582.2896};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_A1_R";
+						description="BluFor Alpha 1 Rifleman";
+						isPlayable=1;
+					};
+					id=87;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1731.402,5.5014391,5579.8188};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_A1_AT2";
+						description="BluFor Alpha 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1301;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_A1";
+			};
+			id=81;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="A1,26,red,sc_mapmarkers\data\fireteam.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor A1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0,0,0";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item17
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1740.3204,5.5014391,5574.042};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_A2_FTL";
+						description="BluFor Alpha 2 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=89;
+					type="B_Soldier_TL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1743.3512,5.5014391,5569.2075};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_A2_AR";
+						description="BluFor Alpha 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=90;
+					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1741.0281,5.5014391,5567.7598};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_A2_AAR";
+						description="BluFor Alpha 2 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=91;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1746.1683,5.5014391,5572.8369};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_A2_AT1";
+						description="BluFor Alpha 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=92;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1743.3665,5.5014391,5579.3838};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_A2_R";
+						description="BluFor Alpha 2 Rifleman";
+						isPlayable=1;
+					};
+					id=94;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1744.9991,5.5014391,5577.1128};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_A2_AT2";
+						description="BluFor Alpha 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1302;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_A2";
+			};
+			id=88;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="A2,26,red,sc_mapmarkers\data\fireteam.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor A2";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0,0,0";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item18
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1723.0194,5.5014391,5598.1323};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_BSL_SL";
+						description="BluFor Bravo Squad Leader";
+						isPlayable=1;
+					};
+					id=96;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1725.7421,5.5014391,5601.6328};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_BSL_M";
+						description="BluFor Bravo Medic";
+						isPlayable=1;
+					};
+					id=97;
+					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,blue,sc_mapmarkers\data\u_medic.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_BSL";
+			};
+			id=95;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BSL,30,blue,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor BSL";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1,0,0";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item19
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1730.9742,5.5014391,5596.4507};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_B1_FTL";
+						description="BluFor Bravo 1 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=99;
+					type="B_Soldier_TL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1733.8751,5.5014391,5591.7505};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_B1_AR";
+						description="BluFor Bravo 1 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=100;
+					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1731.5768,5.5014391,5590.1938};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_B1_AAR";
+						description="BluFor Bravo 1 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=101;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1736.6361,5.5014391,5595.3042};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_B1_AT1";
+						description="BluFor Bravo 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=102;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1734.0375,5.5014391,5602.02};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_B1_R";
+						description="BluFor Bravo 1 Rifleman ";
+						isPlayable=1;
+					};
+					id=104;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1735.4703,5.5014391,5599.562};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_B1_AT2";
+						description="BluFor Bravo 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1303;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_B1";
+			};
+			id=98;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="B1,26,blue,sc_mapmarkers\data\fireteam.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor B1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1,0,0";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item20
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1744.5226,5.5014391,5593.6763};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_B2_FTL";
+						description="BluFor Bravo 2 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=106;
+					type="B_Soldier_TL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1747.5787,5.5014391,5588.9839};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_B2_AR";
+						description="BluFor Bravo 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=107;
+					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1745.2242,5.5014391,5587.4478};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_B2_AAR";
+						description="BluFor Bravo 2 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=108;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1750.3267,5.5014391,5592.5352};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_B2_AT1";
+						description="BluFor Bravo 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=109;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1747.8212,5.5014391,5599.231};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_B2_R";
+						description="BluFor Bravo 2 Rifleman ";
+						isPlayable=1;
+					};
+					id=111;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1749.2445,5.5014391,5596.7852};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_B2_AT2";
+						description="BluFor Bravo 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1304;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_B2";
+			};
+			id=105;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="B2,26,blue,sc_mapmarkers\data\fireteam.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor B2";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1,0,0";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item21
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1726.9644,5.5014391,5617.6782};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_CSL_SL";
+						description="BluFor Charlie Squad Leader";
+						isPlayable=1;
+					};
+					id=113;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1729.5912,5.5014391,5621.0991};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_CSL_M";
+						description="BluFor Charlie Medic";
+						isPlayable=1;
+					};
+					id=114;
+					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,green,sc_mapmarkers\data\u_medic.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_CSL";
+			};
+			id=112;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CSL,30,green,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor CSL";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="2,0,0";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item22
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1734.6073,5.5014391,5616.0215};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_C1_FTL";
+						description="BluFor Charlie 1 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=116;
+					type="B_Soldier_TL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1737.8326,5.5014391,5611.3208};
+						angles[]={0,4.9220982,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_C1_AR";
+						description="BluFor Charlie 1 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=117;
+					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1735.3948,5.5014391,5609.791};
+						angles[]={0,4.9220982,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_C1_AAR";
+						description="BluFor Charlie 1 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=118;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1740.5483,5.5014391,5614.9219};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_C1_AT1";
+						description="BluFor Charlie 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=119;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1737.9647,5.5014391,5621.6396};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_C1_R";
+						description="BluFor Charlie 1 Rifleman ";
+						isPlayable=1;
+					};
+					id=121;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1739.3481,5.5014391,5619.1797};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_C1_AT2";
+						description="BluFor Charlie 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1305;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_C1";
+			};
+			id=115;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="C1,26,green,sc_mapmarkers\data\fireteam.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor C1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="2,0,0";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item23
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1748.3625,5.5014391,5613.2568};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_C2_FTL";
+						description="BluFor Charlie 2 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=123;
+					type="B_Soldier_TL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1751.4784,5.5014391,5608.5444};
+						angles[]={0,4.9220982,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_C2_AR";
+						description="BluFor Charlie 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=124;
+					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1748.9147,5.5014391,5607.1338};
+						angles[]={0,4.9220982,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_C2_AAR";
+						description="BluFor Charlie 2 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=125;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1754.1785,5.5014391,5612.1396};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_C2_AT1";
+						description="BluFor Charlie 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=126;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1751.5046,5.5014391,5618.7944};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_C2_R";
+						description="BluFor Charlie 2 Rifleman ";
+						isPlayable=1;
+					};
+					id=128;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1753.0271,5.5014391,5616.3926};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_C2_AT2";
+						description="BluFor Charlie 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=1306;
+					type="B_soldier_LAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="2,0,0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_C2";
+			};
+			id=122;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="C2,26,green,sc_mapmarkers\data\fireteam.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor C2";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="2,0,0";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item24
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1751.4321,5.5014391,5567.9453};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						name="UNIT_BLU_TH1_P";
+						description="BluFor Transport Helo 1 Pilot";
+						isPlayable=1;
+					};
+					id=130;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1753.83,5.5014391,5569.5381};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UNIT_BLU_TH1_CP";
+						description="BluFor Transport Helo 1 Co-Pilot";
+						isPlayable=1;
+					};
+					id=131;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1752.999,5.5014391,5565.5435};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_TH1_G1";
+						description="BluFor Transport Helo 1 Crew Chief (Repair)";
+						isPlayable=1;
+					};
+					id=132;
+					type="B_soldier_repair_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1756.0912,5.5014391,5571.0615};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_TH1_G2";
+						description="BluFor Transport Helo 1 Gunner";
+						isPlayable=1;
+					};
+					id=133;
+					type="B_helicrew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_TH1";
+			};
+			id=129;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch1,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor TH1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="9,4,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item25
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1755.0309,5.5014391,5585.4614};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						name="UNIT_BLU_TH2_P";
+						description="BluFor Transport Helo 2 Pilot";
+						isPlayable=1;
+					};
+					id=135;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1757.3234,5.5014391,5587.1162};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UNIT_BLU_TH2_CP";
+						description="BluFor Transport Helo 2 Co-Pilot";
+						isPlayable=1;
+					};
+					id=136;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1756.4583,5.5014391,5583.123};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_TH2_G1";
+						description="BluFor Transport Helo 2 Crew Chief (Repair)";
+						isPlayable=1;
+					};
+					id=137;
+					type="B_soldier_repair_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1759.6495,5.5014391,5588.6138};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_TH2_G2";
+						description="BluFor Transport Helo 2 Gunner";
+						isPlayable=1;
+					};
+					id=138;
+					type="B_helicrew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_TH2";
+			};
+			id=134;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch2,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor TH2";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="9,4,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item26
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1775.7925,5.5014391,5562.2915};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						name="UNIT_BLU_TH3_P";
+						description="BluFor Transport Helo 3 Pilot";
+						isPlayable=1;
+					};
+					id=140;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1778.0365,5.5014391,5563.8311};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UNIT_BLU_TH3_CP";
+						description="BluFor Transport Helo 3 Co-Pilot";
+						isPlayable=1;
+					};
+					id=141;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1777.2716,5.5014391,5559.8848};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_TH3_G1";
+						description="BluFor Transport Helo 3 Crew Chief (Repair)";
+						isPlayable=1;
+					};
+					id=142;
+					type="B_soldier_repair_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1780.5726,5.5014391,5565.3784};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_TH3_G2";
+						description="BluFor Transport Helo 3 Gunner";
+						isPlayable=1;
+					};
+					id=143;
+					type="B_helicrew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_TH3";
+			};
+			id=139;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch3,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor TH3";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="9,4,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item27
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1779.4347,5.5014391,5579.8936};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						name="UNIT_BLU_TH4_P";
+						description="BluFor Transport Helo 4 Pilot";
+						isPlayable=1;
+					};
+					id=145;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1781.8113,5.5014391,5581.4258};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UNIT_BLU_TH4_CP";
+						description="BluFor Transport Helo 4 Co-Pilot";
+						isPlayable=1;
+					};
+					id=146;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1781.0424,5.5014391,5577.5015};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_TH4_G1";
+						description="BluFor Transport Helo 4 Crew Chief (Repair)";
+						isPlayable=1;
+					};
+					id=147;
+					type="B_soldier_repair_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1784.1559,5.5014391,5583.0015};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_TH4_G2";
+						description="BluFor Transport Helo 4 Gunner";
+						isPlayable=1;
+					};
+					id=148;
+					type="B_helicrew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_TH4";
+			};
+			id=144;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch4,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor TH4";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="9,4,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item28
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1758.1813,5.5014391,5601.2114};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_IFV1_C";
+						description="BluFor IFV 1 Commander";
+						isPlayable=1;
+					};
+					id=214;
+					type="B_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1760.4603,5.5014391,5602.8667};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_IFV1_G";
+						description="BluFor IFV 1 Gunner";
+						isPlayable=1;
+					};
+					id=215;
+					type="B_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1759.6635,5.5014391,5598.79};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_IFV1_D";
+						description="BluFor IFV 1 Driver (Repair)";
+						isPlayable=1;
+					};
+					id=216;
+					type="B_soldier_repair_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_IFV1";
+			};
+			id=213;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ham1,26,orange,sc_mapmarkers\data\armored.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor IFV1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="10,5,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item29
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1760.9791,5.5014391,5614.8638};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_IFV2_C";
+						description="BluFor IFV 2 Commander";
+						isPlayable=1;
+					};
+					id=218;
+					type="B_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1763.3937,5.5014391,5616.3184};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_IFV2_G";
+						description="BluFor IFV 2 Gunner";
+						isPlayable=1;
+					};
+					id=219;
+					type="B_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1762.4851,5.5014391,5612.335};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_IFV2_D";
+						description="BluFor IFV 2 Driver (Repair)";
+						isPlayable=1;
+					};
+					id=220;
+					type="B_soldier_repair_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_IFV2";
+			};
+			id=217;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ham2,26,orange,sc_mapmarkers\data\armored.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor IFV2";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="10,5,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item30
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1782.5797,5.5014391,5595.4019};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_IFV3_C";
+						description="BluFor IFV 3 Commander";
+						isPlayable=1;
+					};
+					id=222;
+					type="B_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1784.4722,5.5014391,5597.2168};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_IFV3_G";
+						description="BluFor IFV 3 Gunner";
+						isPlayable=1;
+					};
+					id=223;
+					type="B_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1783.6014,5.5014391,5593.1299};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_IFV3_D";
+						description="BluFor IFV 3 Driver (Repair)";
+						isPlayable=1;
+					};
+					id=224;
+					type="B_soldier_repair_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_IFV3";
+			};
+			id=221;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ham3,26,orange,sc_mapmarkers\data\armored.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor IFV3";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="10,5,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item31
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1785.4849,5.5014391,5609.0967};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_IFV4_C";
+						description="BluFor IFV 4 Commander";
+						isPlayable=1;
+					};
+					id=226;
+					type="B_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1787.649,5.5014391,5610.7065};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_IFV4_G";
+						description="BluFor IFV 4 Gunner";
+						isPlayable=1;
+					};
+					id=227;
+					type="B_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1786.9719,5.5014391,5606.7485};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_IFV4_D";
+						description="BluFor IFV 4 Driver (Repair)";
+						isPlayable=1;
+					};
+					id=228;
+					type="B_soldier_repair_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_IFV4";
+			};
+			id=225;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ham4,26,orange,sc_mapmarkers\data\armored.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor IFV4";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="10,5,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item32
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1774.0941,5.5014391,5649.0034};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_BLU_TNK1_C";
+						description="BluFor Tank 1 Commander";
+						isPlayable=1;
+					};
+					id=230;
+					type="B_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1776.8682,5.5014391,5652.5581};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_TNK1_G";
+						description="BluFor Tank 1 Gunner";
+						isPlayable=1;
+					};
+					id=231;
+					type="B_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1775.2015,5.5014391,5644.645};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_TNK1_D";
+						description="BluFor Tank 1 Driver (Repair)";
+						isPlayable=1;
+					};
+					id=232;
+					type="B_soldier_repair_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="7,8,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_TNK1";
+			};
+			id=229;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Tndr1,26,orange,sc_mapmarkers\data\armored.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor TNK1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="10,5,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item33
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1767.0146,5.5014391,5634.0386};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						name="UNIT_BLU_AH1_P";
+						description="BluFor Attack Helo 1 Pilot";
+						isPlayable=1;
+					};
+					id=234;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1769.6654,5.5014391,5637.6284};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UNIT_BLU_AH1_CP";
+						description="BluFor Attack Helo 1 Gunner (Repair)";
+						isPlayable=1;
+					};
+					id=235;
+					type="B_soldier_repair_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="6,5,3";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_AH1";
+			};
+			id=233;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Rpr1,26,yellow,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor AH1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="9,4,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item34
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1737.5592,5.5014391,5640.042};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_MMG1_FTL";
+						description="BluFor Medium MG Team 1 Leader";
+						isPlayable=1;
+					};
+					id=429;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1740.4136,5.5014391,5643.5923};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MMG1_G";
+						description="BluFor Medium MG Team 1 Gunner";
+						isPlayable=1;
+					};
+					id=430;
+					type="B_support_MG_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1738.7349,5.5014391,5635.7671};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MMG1_AG";
+						description="BluFor Medium MG Team 1 Spotter";
+						isPlayable=1;
+					};
+					id=431;
+					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_MMG1";
+			};
+			id=428;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MMG1,26,orange,sc_mapmarkers\data\attachment.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor MMG1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="11,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item35
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1740.7495,5.5014391,5655.7363};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_MMG2_FTL";
+						description="BluFor Medium MG Team 2 Leader";
+						isPlayable=1;
+					};
+					id=433;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1743.4822,5.5014391,5659.2759};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MMG2_G";
+						description="BluFor Medium MG Team 2 Gunner";
+						isPlayable=1;
+					};
+					id=434;
+					type="B_support_MG_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1741.7557,5.5014391,5651.3872};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MMG2_AG";
+						description="BluFor Medium MG Team 2 Spotter";
+						isPlayable=1;
+					};
+					id=435;
+					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_MMG2";
+			};
+			id=432;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MMG2,26,orange,sc_mapmarkers\data\attachment.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor MMG2";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="11,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item36
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1745.3634,5.5014391,5638.3379};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_MAT1_FTL";
+						description="BluFor Medium AT Team 1 Leader";
+						isPlayable=1;
+					};
+					id=437;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1747.9927,5.5014391,5642.0479};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MAT1_G";
+						description="BluFor Medium AT Team 1 Gunner";
+						isPlayable=1;
+					};
+					id=438;
+					type="B_soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1746.3927,5.5014391,5634.1982};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MAT1_AG";
+						description="BluFor Medium AT Team 1 Spotter";
+						isPlayable=1;
+					};
+					id=439;
+					type="B_soldier_AAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_MAT1";
+			};
+			id=436;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MAT1,26,orange,sc_mapmarkers\data\attachment.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor MAT1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="11,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item37
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1748.4425,5.5014391,5654.2666};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_MAT2_FTL";
+						description="BluFor Medium AT Team 2 Leader";
+						isPlayable=1;
+					};
+					id=441;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1751.2495,5.5014391,5657.8042};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MAT2_G";
+						description="BluFor Medium AT Team 2 Gunner";
+						isPlayable=1;
+					};
+					id=442;
+					type="B_soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1749.5513,5.5014391,5649.8193};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MAT2_AG";
+						description="BluFor Medium AT Team 2 Spotter ";
+						isPlayable=1;
+					};
+					id=443;
+					type="B_soldier_AAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_MAT2";
+			};
+			id=440;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MAT2,26,orange,sc_mapmarkers\data\attachment.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor MAT2";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="11,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item38
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1753.2057,5.5014391,5636.9312};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_MTR1_FTL";
+						description="BluFor Mortar Team 1 Leader";
+						isPlayable=1;
+					};
+					id=445;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1755.9055,5.5014391,5640.3921};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MTR1_G";
+						description="BluFor Mortar Team 1 Gunner";
+						isPlayable=1;
+					};
+					id=446;
+					type="B_support_Mort_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1754.4142,5.5014391,5632.5156};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MTR1_AG";
+						description="BluFor Mortar Team 1 Spotter";
+						isPlayable=1;
+					};
+					id=447;
+					type="B_support_AMort_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_MTR1";
+			};
+			id=444;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MTR1,26,orange,sc_mapmarkers\data\mortar.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor MTR1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="11,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item39
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1756.4836,5.5014391,5652.5884};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_MSAM1_FTL";
+						description="BluFor Medium SAM Team 1 Leader";
+						isPlayable=1;
+					};
+					id=449;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1759.2478,5.5014391,5656.0967};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MSAM1_G";
+						description="BluFor Medium SAM Team 1 Gunner";
+						isPlayable=1;
+					};
+					id=450;
+					type="B_soldier_AA_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1757.6617,5.5014391,5648.2271};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_MSAM1_AG";
+						description="BluFor Medium SAM Team 1 Spotter";
+						isPlayable=1;
+					};
+					id=451;
+					type="B_soldier_AAA_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_MSAM1";
+			};
+			id=448;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="SAM1,26,orange,sc_mapmarkers\data\sam.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor MSAM1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="11,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item40
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1733.2507,5.5014391,5649.1006};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_WSL_SL";
+						description="BluFor Weapon Squad Leader";
+						isPlayable=1;
+					};
+					id=453;
+					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1736.0199,5.5014391,5652.6143};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_WSL_M";
+						description="BluFor Weapon Squad Medic";
+						isPlayable=1;
+					};
+					id=454;
+					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,orange,sc_mapmarkers\data\u_medic.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_WSL";
+			};
+			id=452;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WSL,30,orange,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor WSL";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="11,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item41
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1761.0591,5.5014391,5635.27};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_ST1_SP";
+						description="BluFor Sniper Team 1 Spotter";
+						isPlayable=1;
+					};
+					id=456;
+					type="B_spotter_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1763.8101,5.5014391,5638.8877};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_ST1_SN";
+						description="BluFor Sniper Team 1 Sniper";
+						isPlayable=1;
+					};
+					id=457;
+					type="B_sniper_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_ST1";
+			};
+			id=455;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ST1,26,orange,sc_mapmarkers\data\scout.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor ST1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="11,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item42
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1765.5466,5.5014391,5646.7061};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_ENG1_A2";
+						description="BluFor Mine Specialist";
+						isPlayable=1;
+					};
+					id=461;
+					type="B_engineer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1768.4111,5.5014391,5650.2378};
+						angles[]={0,4.9220939,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_ENG1_A3";
+						description="BluFor Mine Specialist ";
+						isPlayable=1;
+					};
+					id=462;
+					type="B_engineer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1764.3409,5.5014391,5650.9209};
+						angles[]={0,4.9220905,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_BLU_ENG1_FTL";
+						description="BluFor Leader Explosive Specialist";
+						isPlayable=1;
+					};
+					id=1337;
+					type="B_engineer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1767.075,5.5014391,5654.416};
+						angles[]={0,4.9220905,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_BLU_ENG1_A1";
+						description="BluFor Explosive Specialist";
+						isPlayable=1;
+					};
+					id=1338;
+					type="B_engineer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_radios_radio";
+							expression="[_this, _value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="8,9,4";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_ENG1";
+			};
+			id=458;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ENG1,26,orange,sc_mapmarkers\data\engineers.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor ENG1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="11,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item43
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1797.9365,5.5,5505.3701};
+				angles[]={0,4.9130878,0};
+			};
+			name="HC_SLOT_1";
+			isPlayable=1;
+			id=463;
+			type="HeadlessClient_F";
+		};
+		class Item44
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1802.6328,5.5,5508.4487};
+				angles[]={0,4.9130878,0};
+			};
+			id=703;
+			type="ace_finger_moduleSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_finger_moduleSettings_maxRange";
+					expression="_this setVariable ['maxRange',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_finger_moduleSettings_enabled";
+					expression="_this setVariable ['enabled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item45
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1802.1875,5.5,5506.4702};
+				angles[]={0,4.9130878,0};
+			};
+			id=704;
+			type="ace_mk6mortar_module";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_mk6mortar_module_allowCompass";
+					expression="_this setVariable ['allowCompass',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_mk6mortar_module_airResistanceEnabled";
+					expression="_this setVariable ['airResistanceEnabled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_mk6mortar_module_allowComputerRangefinder";
+					expression="_this setVariable ['allowComputerRangefinder',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_mk6mortar_module_useAmmoHandling";
+					expression="_this setVariable ['useAmmoHandling',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item46
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1799.8336,5.5,5504.9546};
+				angles[]={0,4.9130878,0};
+			};
+			name="bwmf_placedZeus_1";
+			id=705;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#adminLogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item47
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1803.0947,5.5,5510.374};
+				angles[]={0,4.9130878,0};
+			};
+			id=706;
+			type="ACE_moduleRefuelSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleRefuelSettings_rate";
+					expression="_this setVariable ['rate',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item48
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1800.2968,5.5,5506.939};
+				angles[]={0,4.9130878,0};
+			};
+			name="bwmf_placedZeus_2";
+			id=707;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item49
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1800.7197,5.5,5508.9028};
+				angles[]={0,4.9130878,0};
+			};
+			name="bwmf_placedZeus_3";
+			id=708;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item50
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1798.3706,5.5,5507.3125};
+				angles[]={0,4.9130878,0};
+			};
+			name="HC_SLOT_2";
+			isPlayable=1;
+			id=709;
+			type="HeadlessClient_F";
+		};
+		class Item51
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1725.1857,7.6952362,5651.1924};
+				angles[]={0,4.9220982,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="VEH_BLU_TR7";
+			};
+			id=724;
+			type="B_Truck_01_transport_F";
+			atlOffset=-0.029554367;
+		};
+		class Item52
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1801.7341,5.5,5504.5283};
+				angles[]={0,4.9130878,0};
+			};
+			id=1300;
+			type="ace_weather_ModuleSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_weather_ModuleSettings_useACEWeather";
+					expression="_this setVariable ['useACEWeather',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_weather_ModuleSettings_serverUpdateInterval";
+					expression="_this setVariable ['serverUpdateInterval',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_weather_ModuleSettings_syncMisc";
+					expression="_this setVariable ['syncMisc',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_weather_ModuleSettings_syncRain";
+					expression="_this setVariable ['syncRain',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_weather_ModuleSettings_enableServerController";
+					expression="_this setVariable ['enableServerController',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ace_weather_ModuleSettings_syncWind";
+					expression="_this setVariable ['syncWind',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+	};
+};

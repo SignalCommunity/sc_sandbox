@@ -37,41 +37,93 @@ private _replaceBys = [];
 	_replaceBys pushBack [configName _x, getText _x];
 } forEach _weapons;
 
-// delve out correct amount of magazines
 {
-	_allTracer = if (sand_param_tracerMagRatio == 4) then {true} else {false};
-	_noTracer = if (sand_param_tracerMagRatio == 0) then {true} else {false};
-	
-	if (_allTracer && ((_x select 0) in ["rifle_mag","glrifle_mag","carbine_mag","ar_mag","mmg_mag"])) then {
-		_replaceBys = _replaceBys - [_x];
-		_replaceBys = _replaceBys + [[_x select 0,""]]
-	};
-	if (_noTracer && ((_x select 0) in ["rifle_mag_trace","glrifle_mag_trace","carbine_mag_trace","ar_mag_trace","mmg_mag_trace"])) then {
-		_replaceBys = _replaceBys - [_x];
-		_replaceBys = _replaceBys + [[_x select 0,""]]
-	};
 
-	if (!_allTracer && ((_x select 0) in ["rifle_mag","glrifle_mag","carbine_mag"])) then {
-		_strN = (_x select 1) + ":" + str ((_armament / 4) * (4 - sand_param_tracerMagRatio));
-		_replaceBys = _replaceBys - [_x];
-		_replaceBys = _replaceBys + [[_x select 0, _strN]];
-	};
-	if (!_noTracer&& ((_x select 0) in ["rifle_mag_trace","glrifle_mag_trace","carbine_mag_trace"])) then {
-		_strN = (_x select 1) + ":" + str ((_armament / 4) * (sand_param_tracerMagRatio));
-		_replaceBys = _replaceBys - [_x];
-		_replaceBys = _replaceBys + [[_x select 0, _strN]];
-	};
-	
-	if (!_allTracer && ((_x select 0) in ["ar_mag","mmg_mag"])) then {
-		_strN = (_x select 1) + ":" + str round(((_armament / 12) * (4 - sand_param_tracerMagRatio)));
-		_replaceBys = _replaceBys - [_x];
-		_replaceBys = _replaceBys + [[_x select 0, _strN]];
-	};
-	if (!_noTracer && ((_x select 0) in ["ar_mag_trace","mmg_mag_trace"])) then {
-		_strN = (_x select 1) + ":" + str round(((_armament / 12) * (sand_param_tracerMagRatio)));
-		_replaceBys = _replaceBys - [_x];
-		_replaceBys = _replaceBys + [[_x select 0, _strN]];
-	};
+	// MAGAZINE DISTRIBUTION //
+
+		_allTracer = if (sand_param_tracerMagRatio == 4) then {true} else {false};
+		_noTracer = if (sand_param_tracerMagRatio == 0) then {true} else {false};
+
+		if (_allTracer && ((_x select 0) in ["rifle_mag","glrifle_mag","carbine_mag","ar_mag","mmg_mag"])) then {
+			_replaceBys = _replaceBys - [_x];
+			_replaceBys = _replaceBys + [[_x select 0,""]]
+		};
+		if (_noTracer && ((_x select 0) in ["rifle_mag_trace","glrifle_mag_trace","carbine_mag_trace","ar_mag_trace","mmg_mag_trace"])) then {
+			_replaceBys = _replaceBys - [_x];
+			_replaceBys = _replaceBys + [[_x select 0,""]]
+		};
+
+		if (!_allTracer && ((_x select 0) in ["rifle_mag","glrifle_mag","carbine_mag"])) then {
+			_strN = (_x select 1) + ":" + str ((_armament / 4) * (4 - sand_param_tracerMagRatio));
+			_replaceBys = _replaceBys - [_x];
+			_replaceBys = _replaceBys + [[_x select 0, _strN]];
+		};
+		if (!_noTracer&& ((_x select 0) in ["rifle_mag_trace","glrifle_mag_trace","carbine_mag_trace"])) then {
+			_strN = (_x select 1) + ":" + str ((_armament / 4) * (sand_param_tracerMagRatio));
+			_replaceBys = _replaceBys - [_x];
+			_replaceBys = _replaceBys + [[_x select 0, _strN]];
+		};
+
+		if (!_allTracer && ((_x select 0) in ["ar_mag","mmg_mag"])) then {
+			_strN = (_x select 1) + ":" + str round(((_armament / 12) * (4 - sand_param_tracerMagRatio)));
+			_replaceBys = _replaceBys - [_x];
+			_replaceBys = _replaceBys + [[_x select 0, _strN]];
+		};
+		if (!_noTracer && ((_x select 0) in ["ar_mag_trace","mmg_mag_trace"])) then {
+			_strN = (_x select 1) + ":" + str round(((_armament / 12) * (sand_param_tracerMagRatio)));
+			_replaceBys = _replaceBys - [_x];
+			_replaceBys = _replaceBys + [[_x select 0, _strN]];
+		};
+
+	// ITEM DISTRIBUTION //
+
+		_glHEcount = 	ceil (_armament / 2);	//mag#/2
+		_glSMOKEcount = ceil (_armament / 3);	//mag#/3
+		_glFLAREcount = sand_param_illuminationMunitions;
+		_smokeCount = 	ceil (_armament / 6);
+		_fragcount = 	ceil (_armament / 8); 	//2+ frags unless under 8 mag loadout weight
+		_cSmokeCount = 	ceil (_armament / 12);	//1 of each colored smoke unless over 12 mag loadout weight
+		_cSmokeArr = 	["smoke_red","smoke_purple","smoke_green","smoke_blue"];
+
+		switch (_x select 0) do {
+			case "glrifle_mag_he": {
+				_strN = (_x select 1) + ":" + str _glHEcount;
+				_replaceBys = _replaceBys - [_x];
+				_replaceBys = _replaceBys + [[_x select 0, _strN]];
+			};
+			case "glrifle_mag_smoke": {
+				_strN = (_x select 1) + ":" + str _glSMOKEcount;
+				_replaceBys = _replaceBys - [_x];
+				_replaceBys = _replaceBys + [[_x select 0, _strN]];
+			};
+			case "glrifle_mag_flare": {
+				if (sand_param_illuminationMunitions == 0) then {
+					_replaceBys = _replaceBys - [_x];
+					_replaceBys = _replaceBys + [[_x select 0, ""]];
+				} else {
+					_strN = (_x select 1) + ":" + str _glFLAREcount;
+					_replaceBys = _replaceBys - [_x];
+					_replaceBys = _replaceBys + [[_x select 0, _strN]];
+				};
+			};
+			case "smoke_white": {
+				_strN = (_x select 1) + ":" + str _smokeCount;
+				_replaceBys = _replaceBys - [_x];
+				_replaceBys = _replaceBys + [[_x select 0, _strN]];
+			};
+			case "grenade": {
+				_strN = (_x select 1) + ":" + str _fragCount;
+				_replaceBys = _replaceBys - [_x];
+				_replaceBys = _replaceBys + [[_x select 0, _strN]];
+			};
+		};
+
+		if ((_x select 0) in _cSmokeArr) then {
+			_strN = (_x select 1) + ":" + str _cSmokeCount;
+			_replaceBys = _replaceBys - [_x];
+			_replaceBys = _replaceBys + [[_x select 0, _strN]];
+		};
+
 } forEach _replaceBys;
 
 _weCareAbout = [_configBackpackItems,_configWeapons,_configLaunchers,_configHandguns,_configMagazines,_configItems,_configLinkedItems,_configAttachments];
@@ -163,7 +215,7 @@ private _fnc_addItemsToContainer = {
 
             private _ammountThatWillFit = 9999; //if (_mass == 0) then {9999} else {floor (_sizeLeft / _mass)};
             private _ammountAdded = _ammountThatWillFit min _amountToAdd;
-            
+
             if (_ammountAdded == 0) exitWith {_itemToAdd};
             if (_count > 0) then {
                 (_array select 1) pushBack [_classname, _ammountAdded, _count];

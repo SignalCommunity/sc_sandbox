@@ -23,27 +23,27 @@ class CfgLoadouts {
 	// ~~ Vanilla ~~ //
 
 	class NATO { //@nothing
-		#include "Loadouts\nato.hpp"
+		#include "assets\Loadouts\nato.hpp"
 	};
 	class CSAT {  //@nothing
-		#include "Loadouts\csat.hpp"
+		#include "assets\Loadouts\csat.hpp"
 	};
 	class AAF {  //@nothing
-		#include "Loadouts\aaf.hpp"
+		#include "assets\Loadouts\aaf.hpp"
 	};
 };
 
 class CfgWeaponsPlatforms {
 	class MX {
-		#include "Weapons\mx.hpp"
+		#include "assets\Weapons\mx.hpp"
 	};
 	class AK12 {
-		#include "Weapons\ak12.hpp"
+		#include "assets\Weapons\ak12.hpp"
 	};
 	class AKM {
-		#include "Weapons\akm.hpp"
+		#include "assets\Weapons\akm.hpp"
 	};
 	class AK74 {
-		#include "Weapons\ak74.hpp"
+		#include "assets\Weapons\ak74.hpp"
 	};
 };

@@ -108,7 +108,7 @@ private _configSecondaryAttachments = getArray (_path >> "secondaryAttachments")
 				case "NVGoggles": {
 					_replaceBys = _replaceBys - [_x];
 					if (_nvgUsage != "nosteppysnek") then { // if we told them no steppy snek, they will remove the _replaceBy entry and leave everything the fuck alone
-						_replaceBys = _replaceBys + [[_x select 0, _nvg]];
+						_replaceBys = _replaceBys + [[_x select 0, _nvgUsage]];
 					};
 				};
 			};

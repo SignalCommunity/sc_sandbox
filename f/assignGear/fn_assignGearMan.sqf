@@ -37,7 +37,7 @@ private _nvgUsage = switch (side _unit) do {
 	case east: {
 		private _return = "";
 		if ((sand_param_opforNVD == 1) && (_loadout in ["Helipilot_F","helicrew_F","Pilot_F"])) then {_return = "NVGoggles"};
-		if (sand_param_bluforNVD == 2) then {_return = "nosteppysnek"};
+		if (sand_param_opforNVD == 2) then {_return = "nosteppysnek"};
 		if (sand_param_opforNVD == 3) then {_return = "NVGoggles"};
 		_return
 	};

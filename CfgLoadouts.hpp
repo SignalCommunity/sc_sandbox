@@ -47,3 +47,20 @@ class CfgWeaponsPlatforms {
 		#include "assets\Weapons\ak74.hpp"
 	};
 };
+
+class CfgVehicleFamilies {
+	/*
+	class UAZ {
+		#include "assets\Vehicles\uaz.hpp"
+	};
+	class GAZ {
+		#include "assets\Vehicles\gaz.hpp"
+	};
+	class HMMWV_W {
+		#include "assets\Vehicles\hmmwv_w.hpp"
+	};
+	class HMMWV_D {
+		#include "assets\Vehicles\hmmwv_d.hpp"
+	};
+	*/
+};

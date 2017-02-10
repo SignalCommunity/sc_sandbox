@@ -1,5 +1,4 @@
 class Params {
-	// F3 - Mission Conditions Selector
 	class f_param_weather {
 		title = "Weather";
 		values[] = {0,1,2,3,4,5,6,7,8};
@@ -27,9 +26,7 @@ class Params {
 		isGlobal = 0;
 		code = "f_param_timeOfDay = %1";
 	};
-	
-	class sand_param_bluforFaction
-	{
+	class sand_param_bluforFaction {		//+ more factions needed
 		title = "BLUFOR Faction";
 		values[] = {0,1,2};
 		texts[] = {
@@ -40,9 +37,7 @@ class Params {
 		default = 0;
 		code = "sand_param_bluforFaction = %1";
 	};
-
-	class sand_param_opforFaction
-	{
+	class sand_param_opforFaction {			//+ more factions needed
 		title = "OPFOR Faction";
 		values[] = {0,1,2};
 		texts[] = {
@@ -53,9 +48,7 @@ class Params {
 		default = 1;
 		code = "sand_param_opforFaction = %1";
 	};
-	
-	class sand_param_bluforWeapFamily
-	{
+	class sand_param_bluforWeapFamily {		//+ more weapon families needed
 		title = "BLUFOR Weapon Family";
 		values[] = {0,1,2,3};
 		texts[] = {
@@ -67,9 +60,7 @@ class Params {
 		default = 0;
 		code = "sand_param_bluforWeapFamily = %1";
 	};
-	
-	class sand_param_opforWeapFamily
-	{
+	class sand_param_opforWeapFamily {		//+ more weapon families needed
 		title = "OPFOR Weapon Family";
 		values[] = {0,1,2,3};
 		texts[] = {
@@ -81,9 +72,31 @@ class Params {
 		default = 0;
 		code = "sand_param_opforWeapFamily = %1";
 	};
-	
-	class sand_param_bluforArmament
-	{
+	class sand_param_bluforVehicleFamily {	//! not yet implemented
+		title = "BLUFOR Vehicle Family";
+		values[] = {0,1,2,3};
+		texts[] = {
+			"UAZ [@RHS]",
+			"GAZ [@RHS]",
+			"HMMWV DES [@RHS]",
+			"HMMWV WOOD [@RHS]"
+		};
+		default = 3;
+		code = "sand_param_bluforVehicleFamily = %1";
+	};
+	class sand_param_opforVehicleFamily {	//! not yet implemented
+		title = "OPFOR Vehicle Family";
+		values[] = {0,1,2,3};
+		texts[] = {
+			"UAZ [@RHS]",
+			"GAZ [@RHS]",
+			"HMMWV DES [@RHS]",
+			"HMMWV WOOD [@RHS]"
+		};
+		default = 0;
+		code = "sand_param_opforVehicleFamily = %1";
+	};
+	class sand_param_bluforArmament {		//* not fully tested
 		title = "BLUFOR Armament";
 		values[] = {4,8,12,16,20};
 		texts[] = {
@@ -96,9 +109,7 @@ class Params {
 		default = 12;
 		code = "sand_param_bluforArmament = %1";
 	};
-	
-	class sand_param_opforArmament
-	{
+	class sand_param_opforArmament {		//* not fully tested
 		title = "OPFOR Armament";
 		values[] = {4,8,12,16,20};
 		texts[] = {
@@ -111,9 +122,7 @@ class Params {
 		default = 12;
 		code = "sand_param_opforArmament = %1";
 	};
-	
-	class sand_param_tracerMagRatio
-	{
+	class sand_param_tracerMagRatio {		//* not fully tested
 		title = "Tracer Magazine Ratio";
 		values[] = {0,1,2,3,4};
 		texts[] = {
@@ -126,9 +135,7 @@ class Params {
 		default = 1;
 		code = "sand_param_tracerMagRatio = %1";
 	};
-	
-	class sand_param_illuminationMunitions
-	{
+	class sand_param_illuminationMunitions {//* not fully tested
 		title = "Illumination amount";
 		values[] = {0,2,8,16};
 		texts[] = {
@@ -140,26 +147,24 @@ class Params {
 		default = 0;
 		code = "sand_param_illuminationMunitions = %1";
 	};
-	
-	class sand_param_bluforNVD
-	{
+	class sand_param_bluforNVD {			//! not yet implemented
 		title = "BLUFOR NVDs";
-		values[] = {0,1,2};
+		values[] = {0,1,2,3};
 		texts[] = {
 			"Force remove NVDs.",
+			"Remove all but pilots' NVDs.",
 			"Leave loadout settings.",
 			"Force add NVDs."
 		};
 		default = 1;
 		code = "sand_param_bluforNVD = %1";
 	};
-	
-	class sand_param_opforNVD
-	{
+	class sand_param_opforNVD {				//! not yet implemented
 		title = "OPFOR NVDs";
-		values[] = {0,1,2};
+		values[] = {0,1,2,3};
 		texts[] = {
 			"Force remove NVDs.",
+			"Remove all but pilots' NVDs.",
 			"Leave loadout settings.",
 			"Force add NVDs."
 		};

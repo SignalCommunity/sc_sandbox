@@ -18,7 +18,6 @@ private _configAttachments = getArray (_path >> "attachments");
 private _configSecondaryAttachments = getArray (_path >> "secondaryAttachments");
 
 // Initial NVD handling //
-diag_log ["DIAGNOSTICS before top",_configLinkedItems];
 
 private _nvdParameter = if (_side == west) then {sand_param_bluforNVD} else {sand_param_opforNVD};
 switch (_nvdParameter) do {
@@ -41,7 +40,7 @@ switch (_nvdParameter) do {
 		if !("nvd" in _configLinkedItems) then {_configLinkedItems pushBack "nvd"};
 	};
 };
-diag_log ["DIAGNOSTICS after top",_configLinkedItems];
+
 //~ THIS BLOCK REPLACES BASENAMES WITH REAL CLASSNAMES ~//
 //~ EG. rifle -> rhs_weap_akm, grenade -> rhs_mag_rgd5 ~//
 
@@ -314,8 +313,6 @@ private _primaryWeaponArray = if (_configWeapons isEqualTo []) then {[]} else {[
 private _launcherWeaponArray = if (_configLaunchers isEqualTo []) then {[]} else {[selectRandom _configLaunchers, _configSecondaryAttachments] call _fnc_getWeaponArray};
 private _handgunWeaponArray = if (_configHandguns isEqualTo []) then {[]} else {[selectRandom _configHandguns, []] call _fnc_getWeaponArray};
 
-diag_log ["DIAGNOSTICS before",_configLinkedItems];
-
 //Process linkedItems (includes binocular)
 {
     private _type = [] call {
@@ -338,8 +335,6 @@ diag_log ["DIAGNOSTICS before",_configLinkedItems];
         if (_type == -1) then { diag_log text format ["[POTATO-assignGear] - linkedItems [%1] unknown type", _x]; };
     };
 } forEach _configLinkedItems;
-
-diag_log ["DIAGNOSTICS after",_configLinkedItems];
 
 _configItems = [_configItems, 0] call _fnc_addItemsToContainer;
 _configItems = [_configItems, 1] call _fnc_addItemsToContainer;

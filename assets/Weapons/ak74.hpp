@@ -59,6 +59,7 @@ pistol = "rhs_weap_pya";
 pistol_mag = "rhs_mag_9x19_17:2";
 
 // Grenades, Smoke, Frag and Miscellaneous
+nvd = "NVGoggles";
 grenade = "rhs_mag_rgd5";
 smoke_white = "SmokeShell";
 smoke_red = "SmokeShellRed";

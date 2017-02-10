@@ -8,9 +8,9 @@ class Soldier_F {		// RIFLEMAN
 	handguns[] = 		{};
 	magazines[] = 		{"rifle_mag","rifle_mag_trace","grenade","smoke_white"};
 	items[] = 			{"ACRE_PRC343"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -24,9 +24,9 @@ class officer_F {		// PLATOON COMMANDER + SQUAD LEADER + XO + FAC/JTAC + COMPANY
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white","smoke_blue","smoke_purple"};
 	items[] = 			{"ACRE_PRC148"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","ACE_Vector"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd","ItemGPS","ACE_Vector"};
 	attachments[] = 	{"carbine_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrierGL_rgr"};
 	headgear[] = 		{"H_HelmetSpecB_blk"};
@@ -40,9 +40,9 @@ class Soldier_SL_F {	// PLATOON COMMANDER + SQUAD LEADER + XO + FAC/JTAC + COMPA
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white","smoke_blue","smoke_purple"};
 	items[] = 			{"ACRE_PRC148","ACRE_PRC343"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","ACE_Vector"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd","ItemGPS","ACE_Vector"};
 	attachments[] = 	{"carbine_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrierGL_rgr"};
 	headgear[] = 		{"H_HelmetSpecB_blk"};
@@ -56,9 +56,9 @@ class soldier_UAV_F {	// RIFLEMAN
 	handguns[] = 		{};
 	magazines[] = 		{"rifle_mag","rifle_mag_trace","grenade","smoke_white"};
 	items[] = 			{"ACRE_PRC343"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","B_uavterminal"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd","B_uavterminal"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -72,9 +72,9 @@ class medic_F {			// MEDIC
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white","smoke_white","smoke_green","smoke_green"};
 	items[] = 			{"ACRE_PRC343"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd"};
 	attachments[] = 	{"carbine_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrierSpec_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -88,9 +88,9 @@ class Soldier_TL_F {	// FIRETEAM LEADER
 	handguns[] = 		{};
 	magazines[] = 		{"glrifle_mag","glrifle_mag_trace","glrifle_mag_he","glrifle_mag_smoke","glrifle_mag_flare","grenade","smoke_white","smoke_red"};
 	items[] = 			{"ACRE_PRC343"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd","ItemGPS"};
 	attachments[] = 	{"glrifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetSpecB"};
@@ -104,9 +104,9 @@ class Soldier_AR_F {	// AUTOMATIC RIFLEMAN
 	handguns[] = 		{};
 	magazines[] = 		{"ar_mag","ar_mag_trace","grenade","smoke_white"};
 	items[] = 			{"ACRE_PRC343"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd"};
 	attachments[] = 	{"ar_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -120,9 +120,9 @@ class Soldier_AAR_F {	// ASSISTANT AUTOMATIC RIFLEMAN
 	handguns[] = 		{};
 	magazines[] = 		{"rifle_mag","rifle_mag_trace","grenade","smoke_white"};
 	items[] = 			{"ACRE_PRC343"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","Binocular"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd","Binocular"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -136,9 +136,9 @@ class Soldier_LAT_F {	// ANTITANK RIFLEMAN
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag","carbine_mag_trace","grenade","smoke_white","at_mag"};
 	items[] = 			{"ACRE_PRC343"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd"};
 	attachments[] = 	{"carbine_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -152,9 +152,9 @@ class HeavyGunner_F {	// MEDIUM MACHINE GUNNER
 	handguns[] = 		{"pistol"};
 	magazines[] = 		{"mmg_mag","pistol_mag","grenade","smoke_white"};
 	items[] = 			{"ACRE_PRC343","ACRE_PRC148"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd"};
 	attachments[] = 	{"mmg_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -168,9 +168,9 @@ class Soldier_A_F {		// MEDIUM MACHINE GUN SPOTTER
 	handguns[] = 		{};
 	magazines[] = 		{"rifle_mag","rifle_mag_trace","grenade","smoke_white"};
 	items[] = 			{"ACRE_PRC343","ACRE_PRC148"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ACE_Vector"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd","ACE_Vector"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -184,9 +184,9 @@ class soldier_AT_F {	// MEDIUM ANTITANK GUNNER
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white"};
 	items[] = 			{"ACRE_PRC343","ACRE_PRC148"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd"};
 	attachments[] = 	{"carbine_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -200,9 +200,9 @@ class Soldier_AAT_F {	// MEDIUM ANTITANK ASSISTANT
 	handguns[] = 		{};
 	magazines[] = 		{"rifle_mag","rifle_mag_trace","smoke_white"};
 	items[] = 			{"ACRE_PRC343","ACRE_PRC148"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ACE_Vector"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd","ACE_Vector"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -216,9 +216,9 @@ class soldier_AA_F {	// SAM GUNNER
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white"};
 	items[] = 			{"ACRE_PRC343","ACRE_PRC148"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd"};
 	attachments[] = 	{"carbine_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -232,9 +232,9 @@ class Soldier_AAA_F {	// SAM ASSISTANT
 	handguns[] = 		{};
 	magazines[] = 		{"rifle_mag","rifle_mag_trace","smoke_white"};
 	items[] = 			{"ACRE_PRC343","ACRE_PRC148"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","Binocular"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd","Binocular"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -248,9 +248,9 @@ class support_Mort_F {	// MORTAR GUNNER
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag","carbine_mag_trace","smoke_white"};
 	items[] = 			{"ACRE_PRC343","ACRE_PRC148",BASE_MEDICAL};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ACE_Vector"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd","ACE_Vector"};
 	attachments[] = 	{"carbine_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -264,9 +264,9 @@ class support_AMort_F{	// MORTAR ASSISTANT
 	handguns[] = 		{};
 	magazines[] = 		{"rifle_mag","rifle_mag_trace","smoke_white"};
 	items[] = 			{"ACRE_PRC343","ACRE_PRC148",BASE_MEDICAL};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};
 	vest[] = 			{"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	headgear[] = 		{"H_HelmetB","H_HelmetSpecB"};
@@ -280,9 +280,9 @@ class sniper_F {		// SNIPER
 	handguns[] = 		{};
 	magazines[] = 		{"sniper_mag","smoke_white"};
 	items[] = 			{"ACRE_PRC343",BASE_MEDICAL,"ACRE_PRC148"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd","ItemGPS"};
 	attachments[] = 	{"sniper_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam"};
 	vest[] = 			{"V_Chestrig_rgr"};
 	headgear[] = 		{"H_Watchcap_camo"};
@@ -296,9 +296,9 @@ class spotter_F {		// SPOTTER
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag","carbine_mag_trace","sniper_mag","grenade","smoke_white"};
 	items[] = 			{"ACRE_PRC343","ACRE_PRC148"};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles","ItemGPS","LaserDesignator"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd","ItemGPS","LaserDesignator"};
 	attachments[] = 	{"carbine_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam"};
 	vest[] = 			{"V_Chestrig_rgr"};
 	headgear[] = 		{"H_Watchcap_camo"};
@@ -312,9 +312,9 @@ class Helipilot_F {		// HELICOPTER PILOT
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag"};
 	items[] = 			{"ACRE_PRC148",BASE_MEDICAL};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","ItemGPS","NVgoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","ItemGPS","nvd"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_HeliPilotCoveralls"};
 	vest[] = 			{"V_TacVest_blk"};
 	headgear[] = 		{"H_PilotHelmetHeli_B"};
@@ -328,9 +328,9 @@ class helicrew_F {		// HELICOPTER CREWMAN
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag"};
 	items[] = 			{"ACRE_PRC148",BASE_MEDICAL};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","ItemGPS","NVgoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","ItemGPS","nvd"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_HeliPilotCoveralls"};
 	vest[] = 			{"V_TacVest_blk"};
 	headgear[] = 		{"H_PilotHelmetHeli_B"};
@@ -344,9 +344,9 @@ class Pilot_F {			// FIXED WING PILOT
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag"};
 	items[] = 			{"ACRE_PRC148",BASE_MEDICAL};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","ItemGPS","NVgoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","ItemGPS","nvd"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_PilotCoveralls"};
 	vest[] = 			{"V_TacVest_blk"};
 	headgear[] = 		{"H_PilotHelmetFighter_B"};
@@ -360,9 +360,9 @@ class crew_F {			// CREWMAN
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag","smoke_white"};
 	items[] = 			{"ACRE_PRC343",BASE_MEDICAL};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam"};
 	vest[] = 			{"V_TacVest_blk"};
 	headgear[] = 		{"H_Watchcap_camo"};
@@ -376,9 +376,9 @@ class engineer_F {		// ENGINEER
 	handguns[] = 		{};
 	magazines[] = 		{"carbine_mag","carbine_mag_trace"};
 	items[] = 			{"ACRE_PRC343",BASE_MEDICAL};
-	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
+	linkedItems[] = 	{"ItemMap","ItemCompass","ItemWatch","nvd"};
 	attachments[] = 	{"rifle_attachment"};
-	
+
 	uniform[] = 		{"U_B_CombatUniform_mcam"};
 	vest[] = 			{"V_TacVest_blk"};
 	headgear[] = 		{"H_Watchcap_camo"};

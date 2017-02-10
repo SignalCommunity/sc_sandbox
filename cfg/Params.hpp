@@ -147,7 +147,7 @@ class Params {
 		default = 0;
 		code = "sand_param_illuminationMunitions = %1";
 	};
-	class sand_param_bluforNVD {			//! not yet implemented
+	class sand_param_bluforNVD {			//* not fully tested
 		title = "BLUFOR NVDs";
 		values[] = {0,1,2,3};
 		texts[] = {
@@ -159,7 +159,7 @@ class Params {
 		default = 1;
 		code = "sand_param_bluforNVD = %1";
 	};
-	class sand_param_opforNVD {				//! not yet implemented
+	class sand_param_opforNVD {				//* not fully tested
 		title = "OPFOR NVDs";
 		values[] = {0,1,2,3};
 		texts[] = {

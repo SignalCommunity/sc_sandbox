@@ -1,6 +1,7 @@
 // Author: PabstMirror, modified by Bismarck
+params ["_path","_weaponFamily","_armament","_isPilot","_side"];
 
-params ["_path","_weaponFamily","_armament","_unitType","_nvgUsage"];
+if ((_side != east) && (_side != west)) exitWith {};
 
 private _configUniform = getArray (_path >> "uniform");
 private _configVest = getArray (_path >> "vest");
@@ -16,9 +17,34 @@ private _configLinkedItems = getArray (_path >> "linkedItems");
 private _configAttachments = getArray (_path >> "attachments");
 private _configSecondaryAttachments = getArray (_path >> "secondaryAttachments");
 
+// Initial NVD handling //
+diag_log ["DIAGNOSTICS before top",_configLinkedItems];
+
+private _nvdParameter = if (_side == west) then {sand_param_bluforNVD} else {sand_param_opforNVD};
+switch (_nvdParameter) do {
+	case 0: { //remove from all
+		_found = _configLinkedItems find "nvd";
+		if (_found != -1) then {_configLinkedItems deleteAt _found};
+	};
+	case 1: { //remove from all, add to pilot
+		if !(_isPilot) then {
+			_found = _configLinkedItems find "nvd";
+			if (_found != -1) then {_configLinkedItems deleteAt _found};
+		} else {
+			if !("nvd" in _configLinkedItems) then {_configLinkedItems pushBack "nvd"};
+		}
+	};
+	case 2: { //leave the loadout defaults
+
+	};
+	case 3: { //add to all
+		if !("nvd" in _configLinkedItems) then {_configLinkedItems pushBack "nvd"};
+	};
+};
+diag_log ["DIAGNOSTICS after top",_configLinkedItems];
 //~ THIS BLOCK REPLACES BASENAMES WITH REAL CLASSNAMES ~//
 //~ EG. rifle -> rhs_weap_akm, grenade -> rhs_mag_rgd5 ~//
-//
+
 	private _weaponsPlatformPath = (("true" configClasses (missionConfigFile >> "CfgWeaponsPlatforms")) select _weaponFamily);
 	private _weapons = configProperties [_weaponsPlatformPath];
 	private _replaceBys = [];
@@ -47,7 +73,7 @@ private _configSecondaryAttachments = getArray (_path >> "secondaryAttachments")
 				_replaceBys = _replaceBys - [_x];
 				_replaceBys = _replaceBys + [[_x select 0, _strN]];
 			};
-			if (!_noTracer&& ((_x select 0) in ["rifle_mag_trace","glrifle_mag_trace","carbine_mag_trace"])) then {
+			if (!_noTracer && ((_x select 0) in ["rifle_mag_trace","glrifle_mag_trace","carbine_mag_trace"])) then {
 				_strN = (_x select 1) + ":" + str ((_armament / 4) * (sand_param_tracerMagRatio));
 				_replaceBys = _replaceBys - [_x];
 				_replaceBys = _replaceBys + [[_x select 0, _strN]];
@@ -73,7 +99,6 @@ private _configSecondaryAttachments = getArray (_path >> "secondaryAttachments")
 			_fragcount = 	ceil (_armament / 8); 	//2+ frags unless under 8 mag loadout weight
 			_cSmokeCount = 	ceil (_armament / 12);	//1 of each colored smoke unless over 12 mag loadout weight
 			_cSmokeArr = 	["smoke_red","smoke_purple","smoke_green","smoke_blue"];
-
 			switch (_x select 0) do {
 				case "glrifle_mag_he": {
 					_strN = (_x select 1) + ":" + str _glHEcount;
@@ -105,12 +130,6 @@ private _configSecondaryAttachments = getArray (_path >> "secondaryAttachments")
 					_replaceBys = _replaceBys - [_x];
 					_replaceBys = _replaceBys + [[_x select 0, _strN]];
 				};
-				case "NVGoggles": {
-					_replaceBys = _replaceBys - [_x];
-					if (_nvgUsage != "nosteppysnek") then { // if we told them no steppy snek, they will remove the _replaceBy entry and leave everything the fuck alone
-						_replaceBys = _replaceBys + [[_x select 0, _nvgUsage]];
-					};
-				};
 			};
 
 			if ((_x select 0) in _cSmokeArr) then {
@@ -118,8 +137,11 @@ private _configSecondaryAttachments = getArray (_path >> "secondaryAttachments")
 				_replaceBys = _replaceBys - [_x];
 				_replaceBys = _replaceBys + [[_x select 0, _strN]];
 			};
-
 	} forEach _replaceBys;
+
+
+	// ---------- //
+
 
 	_weCareAbout = [_configBackpackItems,_configWeapons,_configLaunchers,_configHandguns,_configMagazines,_configItems,_configLinkedItems,_configAttachments];
 	_weCareAboutS = ["_configBackpackItems","_configWeapons","_configLaunchers","_configHandguns","_configMagazines","_configItems","_configLinkedItems","_configAttachments"];
@@ -140,10 +162,8 @@ private _configSecondaryAttachments = getArray (_path >> "secondaryAttachments")
 			_wcaIndex = _wcaIndex + 1;
 		} forEach _weCareAbout;
 	} forEach _replaceBys;
-//
+
 //~ THIS BLOCK DOES SOME OTHER STUFF TO CREATE THE THINGS THAT CAN DO THE STUFF ~//
-
-
 
 private _uniformArray = [];
 private _vestArray = [];
@@ -294,6 +314,8 @@ private _primaryWeaponArray = if (_configWeapons isEqualTo []) then {[]} else {[
 private _launcherWeaponArray = if (_configLaunchers isEqualTo []) then {[]} else {[selectRandom _configLaunchers, _configSecondaryAttachments] call _fnc_getWeaponArray};
 private _handgunWeaponArray = if (_configHandguns isEqualTo []) then {[]} else {[selectRandom _configHandguns, []] call _fnc_getWeaponArray};
 
+diag_log ["DIAGNOSTICS before",_configLinkedItems];
+
 //Process linkedItems (includes binocular)
 {
     private _type = [] call {
@@ -317,6 +339,7 @@ private _handgunWeaponArray = if (_configHandguns isEqualTo []) then {[]} else {
     };
 } forEach _configLinkedItems;
 
+diag_log ["DIAGNOSTICS after",_configLinkedItems];
 
 _configItems = [_configItems, 0] call _fnc_addItemsToContainer;
 _configItems = [_configItems, 1] call _fnc_addItemsToContainer;
